@@ -27,9 +27,9 @@ function candidateID() {
     if (emailSent !== EMAIL_CID) { // Prevents sending duplicates
       var subject = 'Candidate ID';
       MailApp.sendEmail(emailAddress, subject, message);
-      MailApp.sendEmail("bosexorg@gmail.com", subject, message);
-      if (division == "XCQR"){MailApp.sendEmail("suyashthinker@gmail.com", subject, message)}
-      else if ((division == "XCESR") || (division == "XCRSD")){MailApp.sendEmail("guptaaditya746@gmail.com", subject, message)}
+      MailApp.sendEmail("<mail>", subject, message);
+      if (division == "<division>"){MailApp.sendEmail("<mail>", subject, message)}
+      else if ((division == "division") || (division == "division")){MailApp.sendEmail("<mail>", subject, message)}
 
       sheet.getRange(startRow + i, update_at_col).setValue(EMAIL_CID);
       SpreadsheetApp.flush();
