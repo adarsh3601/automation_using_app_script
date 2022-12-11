@@ -29,16 +29,16 @@ function candidateID() {
     if (emailSent !== _EMAIL_) { // Prevents sending duplicates
       var subject = 'Confirmation of response';
       MailApp.sendEmail(emailAddress, subject, message_to_cand);
-      MailApp.sendEmail("bosexorg@gmail.com", subject, message_to_bosex);
+      MailApp.sendEmail("emailAddress", subject, message_to_bosex);
 
-      if (division == "XCQR"){MailApp.sendEmail("suyashthinker@gmail.com", subject, message_to_bosex);
+      if (division == "<division>"){MailApp.sendEmail("emailAddress", subject, message_to_bosex);
       MailApp.sendEmail("ankulprajapati7@gmail.com", subject, message_to_bosex)}
-      else if ((division == "XCESR") || (division == "XCRSD")){MailApp.sendEmail("guptaaditya746@gmail.com", subject, message_to_bosex)}
-      else if (division == "XCAR"){//MailApp.sendEmail("saurabhsharma8689@gmail.com", subject, message_to_bosex);
-      //MailApp.sendEmail("sshwetankindia@gmail.com", subject, message_to_bosex);
-      MailApp.sendEmail("shashwat98singh@gmail.com", subject, message_to_bosex);}
+      else if ((division == "<division>") || (division == "<division>")){MailApp.sendEmail("emailAddress", subject, message_to_bosex)}
+      else if (division == "<division>"){//MailApp.sendEmail("emailAddress", subject, message_to_bosex);
+      //MailApp.sendEmail("emailAddress", subject, message_to_bosex);
+      MailApp.sendEmail("emailAddress", subject, message_to_bosex);}
       
-      else if (division == "XCNR"){MailApp.sendEmail("test@gmail.com", subject, message_to_bosex)}
+      else if (division == "<division>"){MailApp.sendEmail("emailAddress", subject, message_to_bosex)}
       sheet.getRange(startRow + i, update_at_col).setValue(_EMAIL_);
       SpreadsheetApp.flush();
     }
