@@ -36,7 +36,7 @@ function update() {
 
       var subject = 'UPDATE for project code '+pro_code;
       MailApp.sendEmail(emailAddress, subject, message);
-      MailApp.sendEmail("bosexorg@gmail.com", subject, message);
+      MailApp.sendEmail("<bosex>", subject, message);
       sheet.getRange(startRow + i, 13).setValue(UPDATE_QUERY);
       SpreadsheetApp.flush();
     }
