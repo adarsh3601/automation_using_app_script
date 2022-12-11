@@ -26,7 +26,7 @@ function review_response() {
         var message = 'Dear '+candidate_ID+',\nThe review from the team is complete. We\'re glad to inform you that the candidature has been approved. The response has been attached below. The lead/co-lead will send you the invitation to slack along with the guidelines of the community. Your Bose.X web account will be activated for that you need to sign-up from the https://www.bosex.org/. You can use your google account to login. This will allow you to access the resource page. Moreover, please read the comment(s) carefully in case the reviewer has asked for some additional link(s)/document(s) please share the same by replying to this mail. Failing to provide the required material(s) within a week from the mail notification will result in automatic revokation of the membership.\n\n'+'Workspace: '+row[12]+'\nComments: '+row[11]+'\n\nTeam Bose.X'
         Logger.log(message)
         MailApp.sendEmail(emailAddress, subject, message);
-        MailApp.sendEmail("bosexorg@gmail.com", subject, message);
+        MailApp.sendEmail("email", subject, message);
         sheet.getRange(startRow + i, update_at_col).setValue(EMAIL_REVIEW);
         Logger.log(message)
         SpreadsheetApp.flush();
@@ -38,7 +38,7 @@ function review_response() {
         var update_at_col = 15;
         var message = 'Dear '+candidate_ID+',\nThe review from the team is complete. We thankyou for your time but unfortunately we cannot offer candidature. The review team\'s response has been attached below.\n\n'+row[11]+'\n\nIn case of any query please contact us.\n\nTeam Bose.X'
         MailApp.sendEmail(emailAddress, subject, message);
-        MailApp.sendEmail("bosexorg@gmail.com", subject, message);
+        MailApp.sendEmail("email", subject, message);
         Logger.log(message)
         sheet.getRange(startRow + i, update_at_col).setValue(EMAIL_REVIEW);
         SpreadsheetApp.flush();
