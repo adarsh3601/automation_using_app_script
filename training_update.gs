@@ -24,7 +24,7 @@ function update() {
       sheet.getRange(startRow + i, 7).setValue(2); // set value to 15 days again
 
       // send message
-      var message = "Dear "+name+", \ncandidate ID: "+candidateID+"messege";
+      var message = "messege";
       Logger.log(message)
       var subject = 'Progress update';
       //MailApp.sendEmail(emailAddress, subject, message);
