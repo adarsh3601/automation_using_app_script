@@ -21,7 +21,7 @@ function candidateID() {
     if (row[4] == "No"){var division = row[7];}
     else {var division = row[17];}
 
-    var message = "Dear "+name+", \nYour candidate ID is B"+division+row[0]+". For future communications we will be using this ID. Your candidature is under review by the team and will usually respond within a week. Prior to the meet the lead/co-lead might choose to conduct a short interview/call prior to the decision. In case if you donot hear from us within a week please mail us at bosexorg@gmail.com. In the meantime you can go through our website at https://www.bosex.org/.\n\nTeam Bose.X";
+    var message = "your message"
     var emailSent = row[30];
     var update_at_col = 31
     if (emailSent !== EMAIL_CID) { // Prevents sending duplicates
