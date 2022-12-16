@@ -21,9 +21,8 @@ function candidateID() {
     var publication = row[12];
     var cv = row[13];
 
-    var message_to_cand = "Dear "+name+",\nThankyou for your submission. Prior to the offering the candidature the lead/co-lead might choose to conduct a short interview/call prior to the decision. Please fill attached form (https://forms.gle/DtC7kB8uFLySuhi59) as a part of recruitment process. It is mandatory to fill the form and might take around 10-15 minutes of you time. \nIn case if you donot hear from us within a 20 days please mail us at bosexorg@gmail.com. In the meantime you can go through our website at https://www.bosex.org/.\n\nTeam Bose.X\n\n\n**This an automated response. Donot reply to this message rather mail at the aforementioned ID**";
-    
-    var message_to_bosex = "A response has been submitted\n\nName:"+name+"\nEmail ID: "+emailAddress+"\nPROJECT CODE: "+prcode+"\n\n"+"\n*Research Exp*:\n"+res_exp+"\n*SKILLS*:\n"+skill+"\n*PUBLICATION*\n"+publication+"\n*CV*\n"+cv;
+    var message_to_cand = "message"
+    var message_to_bosex = message_to_bosex"
     var emailSent = row[14];
     var update_at_col = 15
     if (emailSent !== _EMAIL_) { // Prevents sending duplicates
