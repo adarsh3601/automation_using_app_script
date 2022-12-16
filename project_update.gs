@@ -32,8 +32,7 @@ function update() {
       else {sheet.getRange(startRow + i, 12).setValue('Overdue');}
 
       // send message
-      var message = "Dear "+name+", \ncandidate ID: "+candidateID+"\nThis is a reminder regarding the the project code "+pro_code+" update number "+(update_count+1)+" for project code "+pro_code+". Your next update will be requested on 15 days from now. Please find attached form: https://forms.gle/4rqPTFGPs1FRAg5g9";
-
+      var message = "messege"
       var subject = 'UPDATE for project code '+pro_code;
       MailApp.sendEmail(emailAddress, subject, message);
       MailApp.sendEmail("<bosex>", subject, message);
